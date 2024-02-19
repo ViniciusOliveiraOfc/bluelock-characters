@@ -9,16 +9,39 @@
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <header>
+    <div class="backdrop"></div>
+    <header class="header">
         <div class="container">
             <h1>Blue Lock Players</h1>
         </div>
     </header>
-    <main>
+    <main class="main">
+        <dialog class="modalSelectPlayers" open="true">
+            <div class="container">
+                <header class="modalHeader">
+                    <h1>Selecione seus atacantes</h1>
+                </header>
+                <main class="modalMain">
+                    <form action="" method="dialog">
+                        <select name="" id="selectP1">
+                            <option value="Isagi Yoichi" selected disabled>Escolha um jogador</option>
+                            <option>Isagi Yoichi</option>
+                            <option>Nagi Seishiro</option>
+                        </select>
+                        <select name="" id="selectP2">
+                            <option value="Michael Kaiser" selected disabled>Escolha um rival</option>
+                            <option>Michael Kaiser</option>
+                            <option>Kunigami Rensuke</option>
+                        </select>
+                        <button class="btnEnviar">Enviar</button>
+                    </form>
+                </main>
+            </div>
+        </dialog>
         <div class="container">
             <section id="player1">
                 <div class="playerIdentification">
-                    <img class="playerimg" src="" alt="">
+                    <img class="playerImg" src="" alt="">
                     <h1 class="playerName"></h1>
                 </div>
                 <article class="overall">
@@ -51,7 +74,7 @@
 
             <section id="player2">
                 <div class="playerIdentification">
-                    <img class="playerimg" src="" alt="">
+                    <img class="playerImg" src="" alt="">
                     <h1 class="playerName"></h1>
                 </div>
                 <article class="overall">
