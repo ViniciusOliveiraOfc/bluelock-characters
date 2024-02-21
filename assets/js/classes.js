@@ -1,5 +1,3 @@
-// (atk, sht, dri, pass, def, spd)
-
 class Isagi {
     constructor() {
         this.name = 'Isagi Yoichi';
@@ -49,6 +47,58 @@ class Kunigami {
         this.def = 75;
         this.spd = 85;
         this.imagePath = 'assets/imgs/kunigami.jpg';
+    }
+}
+
+class Chigiri {
+    constructor() {
+        this.name = 'Chigiri Hyoma'
+        this.atk = 95;
+        this.sht = 88;
+        this.dri = 93;
+        this.pass = 80;
+        this.def = 68;
+        this.spd = 98;
+        this.imagePath = 'assets/imgs/chigiri.jpg';
+    }
+}
+
+class Bachira {
+    constructor() {
+        this.name = 'Bachira Meguru'
+        this.atk = 86;
+        this.sht = 82;
+        this.dri = 95;
+        this.pass = 88;
+        this.def = 68;
+        this.spd = 84;
+        this.imagePath = 'assets/imgs/bachira.jpg';
+    }
+}
+
+class Barou {
+    constructor() {
+        this.name = 'Barou Shoei';
+        this.atk = 95;
+        this.sht = 96;
+        this.dri = 88;
+        this.pass = 61;
+        this.def = 68;
+        this.spd = 80;
+        this.imagePath = 'assets/imgs/barou.jpg';
+    }
+}
+
+class Shidou {
+    constructor() {
+        this.name = 'Shidou Ryusei';
+        this.atk = 95;
+        this.sht = 97;
+        this.dri = 78;
+        this.pass = 77;
+        this.def = 76;
+        this.spd = 92;
+        this.imagePath = 'assets/imgs/shidou.png';
     }
 }
 
