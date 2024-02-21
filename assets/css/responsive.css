@@ -1,0 +1,52 @@
+@media (max-width: 1280px) {
+    .playersArea {
+        gap: 5%;
+    }
+
+    #player1, #player2 {
+        gap: none;
+    }
+
+    .overall {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .playersArea {
+        justify-content: center;
+        gap: 10%;
+    }
+    .playerIdentification {
+        border-radius: 1rem;
+    }
+    .playerImg {
+        width: 200px;
+        border-radius: 1rem;
+    }
+    .overall {
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #player1, #player2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .playerIdentification {
+        width: 175px;
+        height: calc(175px + 80px);
+    }
+    .playerImg {
+        width: 175px;
+        height: 175px;
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 435px) {
+    .playersArea {
+        gap: 5px;
+    }
+}

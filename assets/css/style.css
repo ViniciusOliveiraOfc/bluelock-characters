@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #343841;
+    color: #ffffff;
+    font-family: 'Overpass';
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* MODAL SELECT PLAYERS */
 .dnone {
     display: none;
 }
@@ -24,4 +37,120 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+    background-color: #343841;
+    border-color: #24272d;
+    border-radius: 1rem;
+}
+
+.modalTitle {
+    color: #ffffff;
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalForm select, .modalForm button {
+    background-color: #24272d;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+    margin-top: 1rem;
+}
+
+.modalForm select:hover {
+    cursor: pointer;
+}
+
+.modalForm button:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+/* PLAYERS */
+.playersArea {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#player1, #player2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+#player2 {
+    flex-direction: row-reverse;
+}
+
+.blTitle {
+    text-align: center;
+}
+
+.playerIdentification {
+    background-color: #24272d;
+    border-radius: 10%;
+    box-shadow: 0 0 1.5rem -1rem #ffffff;
+}
+
+.playerImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.playerName {
+    text-align: center;
+    padding: .5rem;
+}
+
+.overall {
+    background-color: #24272d;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    box-shadow: 0 0 1.5rem -1rem #ffffff;
+}
+
+.offense-text,
+.shoot-text,
+.dribble-text,
+.pass-text,
+.defense-text,
+.speed-text
+ {
+    border-bottom: 1px solid #ffffff;
+    padding: .5rem 0;
+}
+
+.offense-number,
+.shoot-number,
+.dribble-number,
+.pass-number,
+.defense-number,
+.speed-number
+ {
+    padding: .5rem 0;
+}
+
+.credits {
+    color: rgb(16, 16, 17);
+    text-align: center;
+}
+
+.credits a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.credits a:hover {
+    color: #000000;
 }
